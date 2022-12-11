@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'use E2E Testing' && cypress open"
+    "test": "echo 'use E2E Testing' && cypress open",
+    "test1": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,8 @@
     "url": "https://github.com/l3mpire/sdet-boilerplate/issues"
   },
   "homepage": "https://github.com/l3mpire/sdet-boilerplate#readme",
-  "dependencies": {},
   "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
     "cypress": "^11.2.0",
     "cypress-otp": "^1.0.3",
     "cypress-wait-until": "^1.7.2"

@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('getHomePage', () => {
+        cy.visit('/');
+        cy.url().should('include', 'staging.lemlist.com');
+        cy.xpath('//h1[contains(.,"Sign in")]').should('be.visible');
+        cy.clearCookies();
+})
